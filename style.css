@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-white: rgba(255, 255, 255, 1);
+    --color-blue:  rgba(204, 229, 243, 1);
+    --color-primary: rgba(0, 112, 160, 1);
+    --color-black: rgba(51, 56, 63, 1);
+    --color-grey-light:rgba(150, 159, 164, 1);
+    --color-yellow: rgba(250, 234, 115, 1);
+    --color-blue-light: rgba(204, 239, 246, 1);
+    --color-pink: rgba(247, 206, 220, 1);
+    --color-grey:rgba(247, 249, 250, 1);
+    --color-yellow-light: rgba(250, 225, 115, 1);
+    --color-blue-light: rgba(204, 239, 246, 1);
+}
+h1, h4, h3{
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+}
+p{
+    font-weight: 400;
+}
+.book-btn{
+    width: 7.5rem;
+    height: 2rem;
+    background: var(--color-primary);
+    padding: 0.4rem 0.55rem;
+    border: 0;
+    color: var(--color-white);
+    font-size: 15;
+    font-weight: 400;
+}
+.top-bar{
+    background: var(--color-primary);
+    position: sticky;
+    width: 100vw;
+    height: 2rem;
+    text-align: center;
+}
+.top-bar p{
+    padding: 0.4rem 0;
+    color: #fff;
+    font-size: 14px;
+}
+.top-bar p span{
+    font-size: 13px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 7rem;
+}
+nav .left-side img{
+    width: 5rem;
+}
+nav .left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .left-side a{
+    color: var(--color-black);
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 1rem;
+    padding: 0 1rem;
+}
+nav .right-side{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav .right-side .signin-btn{
+    color: var(--color-primary);
+    font-size: 15px;
+    font-weight: 400;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 4rem;
+}
+.main .main-text{
+    grid-column: 1/2;
+    margin: 0 7rem;
+}
+.main .main-text h1{
+   font-size: 58px;
+}
+.main .main-text > p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 1.2rem 0;
+}
+.main .main-text > div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.main .main-text > div span{
+    color: var(--color-primary);
+}
+.main .main-img{
+    grid-column: 2/3;
+}
+.main .main-img img{
+    height: 420px;
+    width: 450px;
+}
+.main .main-links{
+    grid-column: 1/3;
+    margin-top: 4rem;
+}
+.main .main-links p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+.main .main-links .links{
+   text-align: center;
+   margin-top: 2rem;
+}
+.main .main-links .links a{
+    color: var(--color-grey-light);
+    font-weight: 600;
+    margin-right: 3rem;
+}
+.main .main-links .links a img{
+    width: 2rem;
+}
+main .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 2rem;
+}
+main .cards .card{
+    background: var(--color-yellow);
+    margin: 2rem;
+    padding: 2rem;
+}
+main .cards .card img{
+    width: 55px;
+    height: 55px;
+    margin: 1rem;
+}
+main .cards .card h1{
+    margin-left: 1rem;
+    font-size: 25px;
+}
+main .cards .card p{
+    margin-left: 1rem;
+    line-height: 24px;
+    margin-top: 1.5rem;
+}
+main .cards .card:nth-child(2){
+    background: var(--color-blue-light);
+}
+main .cards .card:nth-child(3){
+    background: var(--color-pink);
+}
+
+main .takecare-section{
+    background: var(--color-grey);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 5rem;
+}
+main .takecare-section .takecare-rightside p{
+    font-family: "Fraunces", serif;
+    font-size: 39px;
+    font-weight: 400;
+}
+main .takecare-section .takecare-rightside .options{
+    margin: 2rem;
+}
+main .takecare-section .takecare-rightside .options hr{
+    width: 60%;
+}
+main .takecare-section .takecare-rightside .options .option{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+main .takecare-section .takecare-rightside .options .option h3{
+    margin-left: 1rem;
+    font-size: 21px;
+}
+main .takecare-section .takecare-rightside .options .option img{
+    width: 32px;
+}
+main .takecare-section .takecare-leftside img{
+    position: relative;
+    top: 25%;
+}
+main .about-section{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    margin: 10%;
+    gap: 1rem;
+}
+main .about-section h1{
+    font-size: 41px;
+}
+main .about-section > div{
+    width: 80%;
+}
+main .about-section > div h3{
+    font-size: 25px;
+}
+main .about-section > div img{
+    width: 15%;
+}
+main .about-section > div p{
+    margin-top: 1rem;
+    font-size: 15px;
+}
+main .idea-section{
+    background: var(--color-primary);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 5% 10%;
+    color: var(--color-white);
+}
+main .idea-section .idea-leftside img{
+    width: 60%;
+}
+main .idea-section .idea-rightside h1{
+    font-size: 42px;
+}
+main .idea-section .idea-rightside > p{
+    margin-top: 1rem;
+    font-size: 18px;
+}
+main .idea-section .idea-rightside > div{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+main .tasks{
+    margin: 6rem;
+}
+main .tasks h1{
+    font-size: 42px;
+}
+main .tasks  p{
+    margin-top: 1rem;
+}
+main .tasks .tasks-option{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    margin: 5%;
+}
+main .tasks .tasks-option .task img{
+    width: 10%;
+    margin-top: 0.4rem;
+}
+main .tasks .tasks-option .task h4{
+    font-size: 25px;
+}
+main .tasks .tasks-option .task > span{
+    color: var(--color-primary);
+}
+footer{
+    background: var(--color-grey);
+    height: 100%;
+}
+footer > div .footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+footer > div .footer-top h1{
+    font-size: 42px;
+}
+footer > div .footer-top p{
+    color: var(--color-primary);
+}
+footer > div .posts{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 0 6rem;
+}
+footer > div .posts .post{
+    background: var(--color-white);
+    margin: 0 2rem;
+}
+footer > div .posts .post .post-img{
+    display: flex;
+    justify-content: center;
+    background: var(--color-pink);
+}
+footer > div .posts .post .post-img img{
+    width: 50%;
+    padding: 1rem;
+}
+footer > div .posts .post .notification{
+    margin: 1rem;
+    background: var(--color-blue);
+    padding: 0.4rem;
+    width: 35%;
+    text-align: center;
+    color: var(--color-primary);
+}
+footer > div .posts .post h1{
+    font-size: 25px;
+    margin: 0 1rem;
+}
+footer > div .posts .post > p{
+    margin: 1rem;
+}
+footer > div .posts .post:nth-child(2) .post-img{
+    background: var(--color-blue-light);
+}
+footer > div .posts .post:nth-child(2) .post-img img{
+    margin: 1.2rem;
+}
+footer > div .posts .post:nth-child(3) .post-img{
+    background: var(--color-yellow-light);
+}
+footer > div .posts .post:nth-child(3) .post-img img{
+    margin: 0.6rem;
+}
+
+
+@media screen and (max-width: 1020px){
+    .main .main-img img{
+        width: 40vw;
+    }
+    main .takecare-section .takecare-leftside{
+        display: none;
+    }
+    main .takecare-section{
+        grid-template-columns: 1fr;
+    }
+    main .about-section{
+        grid-template-columns: 1fr;
+    }
+    main .about-section > div img{
+        width: 5%;
+    }
+    main .tasks .tasks-option{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    footer > div .posts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    nav{
+        margin: 1.5rem;
+    }
+    nav .right-side{
+        display: none;
+    }
+    nav .left-side img{
+        display: none;
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .main .main-img img{
+        display: none;
+    }
+    .main .main-links{
+        grid-column: 1/2;
+    }
+    .main .main-links .links{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    main .cards{
+        grid-template-columns: 1fr;
+    }
+    main .idea-section .idea-leftside{
+        display: none;
+    }
+    footer > div .posts{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    footer > div .footer-top p{
+        display: none;
+    }
+}
+
+
